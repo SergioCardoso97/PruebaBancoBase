@@ -11,6 +11,7 @@ COPY ["PruebaBancoBase/PruebaBancoBase.csproj", "PruebaBancoBase/"]
 COPY ["Negocio/Negocio.csproj", "Negocio/"]
 COPY ["Data/Data.csproj", "Data/"]
 COPY ["Execute/Execute.csproj", "Execute/"]
+COPY ["DAO-DTO/DAO-DTO.csproj", "DAO-DTO/"]
 RUN dotnet restore "PruebaBancoBase/PruebaBancoBase.csproj"
 COPY . .
 WORKDIR "/src/PruebaBancoBase"

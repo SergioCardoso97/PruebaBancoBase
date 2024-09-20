@@ -1,0 +1,12 @@
+version: '1.0'
+
+services:
+  prueba.banco.base:
+    build:
+      context: '/PruebaBancoBase'
+      dockerfile: PruebaBancoBase/Dockerfile
+    container_name: dockerpruebabancobase
+    environment: 
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "8081:80"
