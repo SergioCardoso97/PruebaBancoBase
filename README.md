@@ -13,7 +13,8 @@ Agrego también el Dockerfile de la API construida con .NET y su archivo de dock
 ![alt text](image-1.png)
 
 
-Para el patron de sieño me base en una arquitectura de microservicios con programacion por capas utilizando principalmente la inyeccion de dependecias.
+Para el patrón de diseño me basé en una arquitectura de microservicios con programación por capas utilizando principalmente la inyección de dependencias.
+
 Los servicios fueron del tipo REST
 
 No agregue la Colección en Postman, ya que habilite el swagger de la API y desde ahí es posible hacer las pruebas a los endpoints.
