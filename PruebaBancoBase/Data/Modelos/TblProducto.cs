@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Data.Modelos;
 
@@ -18,6 +19,7 @@ public partial class TblProducto
     public DateTime FechaCreacion { get; set; }
 
     public virtual TblVendedore IdTblVendedorNavigation { get; set; } = null!;
+    [JsonIgnore]
 
     public virtual ICollection<RelOrdenesProducto> RelOrdenesProductos { get; } = new List<RelOrdenesProducto>();
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Data.Modelos;
 
@@ -13,5 +14,6 @@ public partial class CatEstatusPago
 
     public DateTime FechaCreacion { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<TblPago> TblPagos { get; } = new List<TblPago>();
 }

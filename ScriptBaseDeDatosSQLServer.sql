@@ -71,8 +71,9 @@ USE [PruebaBancoBase]
 GO
 
 INSERT INTO [dbo].[CatEstatusPago] ([Estatus]) VALUES ('Pendiente'); 
-INSERT INTO [dbo].[CatEstatusPago] ([Estatus]) VALUES ('Pagado');
+INSERT INTO [dbo].[CatEstatusPago] ([Estatus]) VALUES ('Aceptado');
 INSERT INTO [dbo].[CatEstatusPago] ([Estatus]) VALUES ('Rechazado');
+
 
 
 INSERT INTO [dbo].[TblClientes] ([Nombre], [RFC]) VALUES ('Cliente 1', 'YFJQ751009HGA');

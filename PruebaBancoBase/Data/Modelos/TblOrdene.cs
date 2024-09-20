@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Data.Modelos;
 
@@ -16,6 +17,7 @@ public partial class TblOrdene
     public virtual TblCliente IdTblClienteNavigation { get; set; } = null!;
 
     public virtual ICollection<RelOrdenesProducto> RelOrdenesProductos { get; } = new List<RelOrdenesProducto>();
+    [JsonIgnore]
 
     public virtual ICollection<TblPago> TblPagos { get; } = new List<TblPago>();
 }

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Negocio.Catalogos;
 
-namespace PruebaBancoBase.Controllers
+namespace PruebaBancoBase.Controllers.Catalogos
 {
     [ApiController]
     [Route("[controller]")]
